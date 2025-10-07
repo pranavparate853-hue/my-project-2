@@ -1,0 +1,79 @@
+# Auth System
+
+A simple Node.js authentication system using Express, MongoDB, JWT, bcryptjs, and Handlebars.
+
+## Features
+
+- User signup and login with hashed passwords
+- JWT-based session authentication (stored in cookies)
+- Protected welcome page
+- Logout functionality
+- Responsive UI with custom CSS
+
+## Folder Structure
+
+```
+auth system/
+│
+├── public/
+│   └── css/
+│       └── welcome.css
+│
+├── scr/
+│   ├── index.js
+│   └── mongo.js
+│
+├── templates/
+│   ├── login.hbs
+│   ├── signup.hbs
+│   └── welcome.hbs
+│
+├── package.json
+└── README.md
+```
+
+## Setup Instructions
+
+1. **Clone the repository or copy the files to your machine.**
+
+2. **Install dependencies:**
+   ```
+   npm install express mongoose jsonwebtoken cookie-parser bcryptjs hbs
+   ```
+
+3. **Start MongoDB**  
+   Make sure your MongoDB server is running locally.
+
+4. **Run the server:**
+   ```
+   node scr/index.js
+   ```
+
+5. **Open your browser and visit:**
+   ```
+   http://localhost:3000/
+   ```
+
+## Usage
+
+- **Sign Up:**  
+  Go to `/signup` to create a new account.
+
+- **Login:**  
+  Use your credentials on the login page.
+
+- **Welcome Page:**  
+  After login, you'll see a welcome message and a logout button.
+
+- **Logout:**  
+  Click the logout button to end your session.
+
+## Notes
+
+- Make sure the `templates` folder is correctly named and contains all `.hbs` files.
+- Update MongoDB connection details in `scr/mongo.js` if needed.
+
+---
+
+**Author:**  
+pranav parate  

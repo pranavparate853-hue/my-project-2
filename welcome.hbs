@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome{{#if username}}, {{username}}{{/if}}!</h1>
+        <p>You have successfully logged in.</p>
+        <form action="/logout" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
